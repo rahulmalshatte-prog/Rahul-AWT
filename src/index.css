@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-swiss-bg: #F4F1EE;
+  --color-swiss-dark: #1A1A1A;
+  --color-swiss-red: #D32F2F;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-swiss-bg);
+  color: var(--color-swiss-dark);
+}
+
+/* Bold Typography Theme Styles */
+.title-massive {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 0.85;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.title-sub-massive {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  line-height: 0.9;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.brutalist-card {
+  border: 2px solid var(--color-swiss-dark);
+  background-color: #ffffff;
+  box-shadow: 4px 4px 0px 0px var(--color-swiss-dark);
+  transition: all 0.15s ease-in-out;
+}
+
+.brutalist-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px var(--color-swiss-dark);
+}
+
+.brutalist-btn {
+  border: 2px solid var(--color-swiss-dark);
+  background-color: var(--color-swiss-red);
+  color: #ffffff;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 3px 3px 0px 0px var(--color-swiss-dark);
+  transition: all 0.1s ease-in-out;
+}
+
+.brutalist-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px var(--color-swiss-dark);
+}
+
+.brutalist-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px var(--color-swiss-dark);
+}
+
+.brutalist-input {
+  border: 2px solid var(--color-swiss-dark);
+  background-color: #ffffff;
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+
+.brutalist-input:focus {
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 0px 0px var(--color-swiss-dark);
+}
+

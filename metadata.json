@@ -1,0 +1,6 @@
+{
+  "name": "Blood Donor Management System",
+  "description": "System Design Document & Interactive Prototype demonstrating donor registration, blood group search, and dynamic recovery eligibility checks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
